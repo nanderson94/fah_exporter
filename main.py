@@ -1,12 +1,16 @@
+#!/usr/bin/python3
+# -*- coding: utf8 -*-
+# vim: ts=4 sts=4 sw=4 et ai
+
+import prometheus_client
 import telnetlib
 import json
 import os
 from pprint import pprint
 
-client = telnetlib.Telnet("192.168.1.69", "36330", 10)
 
 class FAHClient:
-    """Class to handle communications with telnet socket"""
+    """Class to handle communications over telnet to FAHClient"""
 
     # Prompt sequence to scan for
     prompt = b"> "
@@ -84,7 +88,6 @@ if __name__ == "__main__":
         pprint(client.json("info"))
         pprint(client.json("options"))
         pprint(client.json("queue-info"))
-        #print(client.msg("slot-info"))
         pprint(client.json("slot-info"))
         pprint(client.json("simulation-info 01"))
 

@@ -1,0 +1,28 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "781bb050b87cef0f901a65df091578d8bed6b00d9a242eda75e1db022329a9b5"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.8"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "prometheus-client": {
+            "hashes": [
+                "sha256:71cd24a2b3eb335cb800c7159f423df1bd4dcd5171b234be15e3f31ec9f622da"
+            ],
+            "index": "pypi",
+            "version": "==0.7.1"
+        }
+    },
+    "develop": {}
+}
